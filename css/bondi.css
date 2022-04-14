@@ -1,0 +1,189 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+  }
+.main-btn,
+.main-btn:hover{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+  }
+/*Start Nav*/
+.navbar{
+      background-color: var(--dark-color);
+  }
+.navbar .navbar-toggler,
+.navbar .navbar-toggler:focus{
+    border-color: var(--green-color);
+    box-shadow: none;
+}
+.navbar .navbar-toggler .navbar-toggler-icon{
+    color: #fff;
+}
+.navbar ul a
+{
+    color: white;
+    font-weight: 500;
+}
+.navbar ul a.active,
+.navbar ul a:hover{
+    color: var(--green-color);
+}
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+  }
+  .navbar .search svg {
+    color: var(--green-color);
+  }
+/*End Nav*/
+/*Start Landing*/
+.landing{
+    background-color: var(--dark-color);
+    height: calc(100vh - 72px);
+
+}
+/*End Landing*/
+/*Start fetures*/
+.fetures{
+    margin-top: 60px;
+}
+.feat p::after{
+    content: '';
+    position: absolute;
+    background-color: var(--green-color);
+    height: 2px;
+    width: 14%;
+    bottom: -10px;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon-holder{
+    height: 200px;
+}
+.fetures svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fetures svg.number{
+    font-size: 12rem;
+    /* opacity: .1; */
+    color: var(--section-color);
+}
+.fetures svg.icon{
+    color: var(--green-color);
+}
+.fetures h4{
+    color: var(--yellow-color);
+}
+/*End fetures*/
+/* Start our work */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul li a.active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul li a:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+}
+.our-work .box::before{
+    content: attr(box-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    transition: .3s;
+    transform: translateX(calc(-100% - 5px));
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+/* End our work */
+/* Start Stuff */
+.stuff .about h6{
+    max-width: 500px;
+}
+/* End Stuff */
+/* Start Team */
+.team {
+    background-color: var(--section-color);
+  }
+  .team h2 {
+    color: var(--yellow-color);
+  }
+  .team .card h4 {
+    background-color: var(--green-color);
+  }
+  /* End Team */
+/* Start project */
+.project{
+    background-color: var(--dark-color);
+}
+  /* End project */
+/* Start subscribe */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input{
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.subscribe input:focus{
+    outline: none;
+}
+.subscribe input::placeholder{
+    color: white;
+}
+.subscribe a {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+/* Start subscribe */
+footer{
+    background-color: var(--dark-color);
+}
+footer p:first-of-type span{
+    color: var(--yellow-color);
+}
+footer p:last-of-type span{
+    color: var(--green-color);
+}
+footer a {
+    text-decoration: none;
+}
+footer .social svg{
+    font-size: 25px;
+}
+footer .social li:first-child svg{
+    background-color: #1877f2;
+}
+footer .social li:nth-child(2) svg{
+    background-color: #1da1f2;
+}
+footer .social li:nth-child(3) svg{
+    background-color: #e1306c;
+}
+footer .social li:nth-child(4) svg{
+    background-color: #ff0000;
+}
+footer .social li:last-child svg{
+    background-color: #0077b5;
+}
